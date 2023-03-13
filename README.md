@@ -27,7 +27,6 @@ To use this web scraping example, run the following command in the terminal to s
 
 ```
 docker-compose exec scrapy bash
-cd applicant_scraper
 scrapy crawl myspider -s MYSQL_HOST='localhost' -s MYSQL_USER='root' -s MYSQL_PASSWORD='root' -s MYSQL_DATABASE='scraped_data'
 ```
 Scrapy will start running the spider and output the results to the console and insert to database.

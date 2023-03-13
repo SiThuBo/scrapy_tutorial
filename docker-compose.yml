@@ -9,7 +9,7 @@ services:
       MYSQL_HOST: mysql
       MYSQL_USER: root
       MYSQL_PASSWORD: root
-      MYSQL_DATABASE: scraped_applicants
+      MYSQL_DATABASE: scraped_data
     depends_on:
       - mysql
     command: tail -f /dev/null
@@ -18,7 +18,7 @@ services:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: scraped_applicants
+      MYSQL_DATABASE: scraped_data
     volumes:
       - mysql_data:/var/lib/mysql
     ports:

@@ -1,0 +1,7 @@
+Scrapy==2.8.0
+itemadapter
+mysqlclient
+PyMySQL
+sqlparse
+twisted
+mysql-connector-python
